@@ -1,31 +1,17 @@
 <!DOCTYPE html>
-<html>
-<head>
-<style>
-table.lamp {
-width:100%;
-border:1px solid #d4d4d4;
-}
-table.lamp th, td {
-padding:10px;
-}
-table.lamp th {
-width:40px;
-}
-</style>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Hello HUY</title>
 </head>
 <body>
-
-<table class="lamp">
-<tr>
-<th>
-<img src="/wp-content/uploads/2015/06/lamp.jpg" alt="Bóng đèn" style="height:32px;width:32px">
-</th>
-<td>
-Welcome to my life. khong biet cai file css de lam gi nhung chi can html la da hien page roi
-</td>
-</tr>
-</table>
-
+    <form id="hello" runat="server">
+        <h1 style="color:red">Welcome to mylife ASP</h1>
+        <h4 style="color:blue">Input your name:</h4>
+        <asp:TextBox ID="txtName" Height="20" Width="200" runat="server"></asp:TextBox>
+        <asp:Button ID="btnName" Height="28" Width="100" runat="server" Text="Sent" OnClick="btnName_Click" />
+        <br /> <br />
+        <asp:Label ID="lblName" runat="server" Text=""></asp:Label>
+    </form>
 </body>
 </html>
