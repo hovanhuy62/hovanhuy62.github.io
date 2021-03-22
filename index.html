@@ -6,12 +6,56 @@
 </head>
 <body>
     <form id="hello" runat="server">
-        <h1 style="color:red">HUY BEOS AHAHAHAHA.</h1>
+        <h1 style="color:red">Welcome to ATS Warrior.</h1>
         <h4 style="color:blue">Input your name:</h4>
         <asp:TextBox ID="txtName" Height="20" Width="200" runat="server"></asp:TextBox>
         <asp:Button ID="btnName" Height="28" Width="100" runat="server" Text="Sent" OnClick="btnName_Click" />
         <br /> <br />
-		<img src="image/1>PNG" alt="">
+		<img src="image/1.PNG" alt="">
+		mixin cuboid()
+  .cuboid(class!=attributes.class)
+    - let s = 0
+    while s < 6
+      .cuboid__side
+      - s++
+
+input(type="radio" name="fan" id="zero")
+input(type="radio" name="fan" id="one" checked="true")
+input(type="radio" name="fan" id="two")
+input(type="radio" name="fan" id="three")
+
+.scene
+  .fan
+    .fan__base
+      +cuboid()(class="base")
+    .fan__controls
+      label.fan__control(for="zero")
+        +cuboid()(class="control")
+      label.fan__control(for="one")
+        +cuboid()(class="control")
+      label.fan__control(for="two")
+        +cuboid()(class="control")
+      label.fan__control(for="three")
+        +cuboid()(class="control")
+    .fan__spine
+      +cuboid()(class="spine")
+    .fan__head
+      .fan__rotater
+        +cuboid()(class="rotater")
+        .fan__stalk
+          +cuboid()(class="stalk")
+      //- Use this as the ring
+      .fan__barrel
+        +cuboid()(class="barrel")
+      .fan__housing
+        .fan__housing-rear
+        .fan__blades
+          .fan__blade
+          .fan__blade
+          .fan__blade
+        .fan__housing-front
+          img(src="https://assets.codepen.io/605876/avatar.png")
+
         <asp:Label ID="lblName" runat="server" Text=""></asp:Label>
     </form>
 </body>
