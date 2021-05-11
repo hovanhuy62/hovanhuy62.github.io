@@ -1,18 +1,275 @@
 <!DOCTYPE html>
+<html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title>Hello HUY</title>
+<head>
+    <title>WLanHPage</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/vendors/css/grid.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
+
 </head>
+
 <body>
-    <form id="hello" runat="server">
-        <h1 style="color:red">Welcome to ATS Warrior.</h1>
-        <h4 style="color:blue">Input your name:</h4>
-        <asp:TextBox ID="txtName" Height="20" Width="200" runat="server"></asp:TextBox>
-        <asp:Button ID="btnName" Height="28" Width="100" runat="server" Text="Sent" OnClick="btnName_Click" />
-        <br /> <br />
-		<img src="image/1.PNG" alt="">
-		
-    </form>
+    <header id="home">
+        <nav class="sticky">
+            <a href="#home"><img class="logo" src="./resources/img/logo.png" alt="logo"></a>
+            <ul class="navi_main">
+                <li><a href="#testimonial">How Client thinks</a> </li>
+                <li><a href="#about">About</a>
+                </li>
+                <li><a href="#product">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="clearfix"></div>
+        <div class="row">
+            <div class="heading_main_box">
+                <h1>We will study <br> English together. <br>
+                    So join with us.
+                </h1>
+                <a href="#about" class="btn">Tell me more</a>
+                <a href="https://hothilananh2711.wixsite.com/allaboutgirls/post/ch%C3%BAng-ta-l%C3%A0m-m%C3%ACnh-bu%E1%BB%93n-hay-vui-b%E1%BA%B1ng-nh%E1%BB%AFng-l%E1%BB%B1a-ch%E1%BB%8Dn?fbclid=IwAR3KzNaHIdwikhmI5wceT5zUFPEubPrjZdf637vcr1nvNPmG7lHtU_mMxjg" class="btn">Join us</a>
+
+            </div>
+
+        </div>
+
+    </header>
+
+    <section class="about_section" id="about">
+        <div class="row">
+            <h2> About Us </h2>
+        </div>
+        <p class="p_long">We are people that are studying English by ourselves, we believe that you don’t need to pay
+            <br>
+            so much money for being good at English, we’re here to help you
+        </p>
+        <div class="row">
+            <div class="col span-1-of-4 about-picture">
+                <img class="img1" src="./resources/img/nagtho.JPG" alt="Photo1">
+                <p class="picture-title">
+                    Team working
+                </p>
+            </div>
+
+            <div class="col span-1-of-4 about-picture">
+                <img class="img2" src="./resources/img/ngtho.JPG" alt="Photo2">
+                <p class="picture-title">
+                    Funy class
+                </p>
+            </div>
+
+            <div class="col span-1-of-4 about-picture">
+                <img class="img3" src="./resources/img/activities3.jpeg" alt="Photo3">
+                <p class="picture-title">
+                    Be Confident
+                </p>
+            </div>
+
+            <div class="col span-1-of-4 about-picture">
+                <img class="img4" src="./resources/img/activities4.jpeg" alt="Photo4">
+                <p class="picture-title">
+                    All our friends
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="product-section" id ="product">
+        <h2>Products</h2>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <h3>Pronunciation class</h3>
+                    <p class='product-price'>19$ <span>/month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Native Points</li>
+                        <li><i class="fas fa-check"></i>Master IPA</li>
+                    </ul>
+                    <a href="#" class="btn">JOIN US</a>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <h3>Listening class</h3>
+                    <p class='product-price'>25$ <span>/month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Native speaking </li>
+                        <li><i class="fas fa-check"></i>Speaking naturally</li>
+                    </ul>
+                    <a href="#" class="btn">JOIN US</a>
+                </div>
+            </div>
+            <div class="col span-1-of-3">
+                <div class="product-box">
+                    <h3>Speaking class</h3>
+                    <p class='product-price'>30$ <span>/month</span></p>
+                    <ul>
+                        <li><i class="fas fa-check"></i>Native speech</li>
+                        <li><i class="fas fa-check"></i>Hearing English clearly</li>
+                    </ul>
+                    <a href="#" class="btn">JOIN US</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <section class="testimonials-section" id="testimonial">
+        <h2>Testimonial</h2>
+        <div class="row">
+            <div class="col span-1-of-3">
+                <blockquote>
+                    if you are a girl, it's right to read <br> it.
+                    <cite>
+                        <img class="imgs" src="./resources/img/Lanh2.png" alt="PHoto1"> LAnH
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    Trust me, you can master English just by join this
+                    <cite>
+                        <img src="./resources/img/person5.jpeg" alt="PHoto2"> Cat
+                    </cite>
+                </blockquote>
+            </div>
+            <div class="col span-1-of-3">
+                <blockquote>
+                    https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29794.7
+                    <cite>
+                        <img class="imgs" src="./resources/img/personspec.png" alt="PHoto3"> Lan
+                    </cite>
+                </blockquote>
+            </div>
+        </div>
+    </section>
+
+    <section class="sponsor-section" id="sponsor">
+        <h2>Sponsors</h2>
+        <div class="row">
+            <ul class='sponsers-showcase clearfix'>
+                <li>
+                    <figure>
+                        <img class='logo-sponsor' src="resources/img/barcelona_logo.png" alt="barca">
+                        <figcaption>
+                            Barcelona
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img class='logo-sponsor' src="resources/img/bayern_logo.png" alt="bayern">
+                        <figcaption>
+                            BayernMuchen
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img class='logo-sponsor' src="resources/img/mctcity_logo.png" alt="mc">
+                        <figcaption>
+                            ManCity
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+            <ul class='sponsers-showcase clearfix'>
+                <li>
+                    <figure>
+                        <img class='logo-sponsor' src="resources/img/juventus_logo.png" alt="juve">
+                        <figcaption>
+                            Juvetus
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img class='logo-sponsor' src="resources/img/real_logo.png" alt="real">
+                        <figcaption>
+                            RealMadrid
+                        </figcaption>
+                    </figure>
+                </li>
+                <li>
+                    <figure>
+                        <img class='logo-sponsor' src="resources/img/tottenham_logo.png" alt="tot">
+                        <figcaption>
+                            TottenhamHospur
+                        </figcaption>
+                    </figure>
+                </li>
+            </ul>
+
+
+        </div>
+    </section>
+    <section class="contact-section" id="contact">
+        <div class="row">
+            <div class="col span-1-of-3">
+                <ul class="infomation">
+                    <li> <i class="fas fa-map-marker-alt"></i> Address: Hanoi, Hanoi, Vietnam </li>
+                    <li> <i class="fas fa-envelope"></i> Email:htla&@hotmail.com</li>
+                    <li> <i class="fas fa-phone"></i> Mobile: 03337564 </li>
+                </ul>
+                <ul class="social-icons">
+                    <li><i class="fab fa-facebook"></i></li>
+                    <li><i class="fab fa-twitter-square"></i></li>
+                    <li><i class="fab fa-instagram"></i></li>
+                    <li><i class="fab fa-google-plus-square"></i></li>
+                </ul>
+
+            </div>
+            <div class="col span-2-of-3">
+                <form>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Name</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="text" placeholder="Your Name">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Email</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <input type="email" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col span-1-of-3">
+                            <label>Message</label>
+                        </div>
+                        <div class="col span-2-of-3">
+                            <textarea placeholder="Your Message"> </textarea>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <input type="submit" class='btn' value="Sent It">
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+    </section>
+    <section class="contact-section">
+        <footer>
+            <p>Copyright &copy; by HVH 2021</p>
+        </footer>
+
+
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="./vendors/js/jquery.waypoints.min.js"></script>
+    <script src="./resources/js/scripts.js"></script>
 </body>
+
 </html>
