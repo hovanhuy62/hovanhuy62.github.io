@@ -1,19 +1,18 @@
-<!-- #group.howkteam.com -> trao đổi, hỏi đáp, thảo luận
-     #nhớ Like và Sub video youtube
-     #Code: howkteam.com
-     #Kho tài liệu: Howkteam.com/documentation
-     #Hỏi đáp tại website: howkteam.com/questions => người khác tìm lại có đáp án -->
-<!-- Chung ta dang code html -->
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="styles.css">
-    <title>SelfTaught</title>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Hello HUY</title>
 </head>
 <body>
-    
+    <form id="hello" runat="server">
+        <h1 style="color:red">Welcome to ATS Warrior.</h1>
+        <h4 style="color:blue">Input your name:</h4>
+        <asp:TextBox ID="txtName" Height="20" Width="200" runat="server"></asp:TextBox>
+        <asp:Button ID="btnName" Height="28" Width="100" runat="server" Text="Sent" OnClick="btnName_Click" />
+        <br /> <br />
+		<img src="image/1.PNG" alt="">
+		
+    </form>
 </body>
 </html>
