@@ -174,8 +174,8 @@ header{
 ______________ABOUT SECTION_____________________________--*/
 
 .img1, .img2
-{
-    width: 230%;
+{    
+    height: 167px;
 }
 .about-picture img{
     width: 90%;
